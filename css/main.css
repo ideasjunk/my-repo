@@ -1,0 +1,283 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Helvetica', sans-serif;
+  overflow: hidden;
+  background: purple;
+}
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  height: auto;
+  width: 100%;
+  /* Full width */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home {
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: left;
+          flex-direction: left;
+}
+
+.home a {
+  font-size: 1em;
+  text-decoration: none;
+  color: white;
+  margin: 1em;
+}
+
+.social-links {
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: right;
+          flex-direction: right;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: white;
+  margin: 1em;
+}
+
+/* Links inside the navbar */
+/*.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+/* All the snapping stuff */
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+/* Other styles */
+section {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section:nth-child(1) {
+  background-color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: block;
+}
+
+.hero-content {
+  margin: 15em 3em;
+}
+
+.hero-content h1 {
+  font-size: 10vh;
+  margin: 0;
+}
+
+section:nth-child(2) {
+  background-color: white;
+  display: block;
+  padding-top: 5vh;
+  color: coral;
+}
+
+section:nth-child(3) {
+  background-color: white;
+  display: block;
+  padding-top: 5vh;
+}
+
+section:nth-child(4) {
+  background-color: white;
+  display: block;
+  padding-top: 5vh;
+}
+
+.wapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2em;
+}
+
+.one {
+  background-color: white;
+  height: 35vh;
+  width: 100%;
+  color: black;
+}
+
+.one p {
+  margin: 2em;
+  padding-top: 2em;
+}
+
+.two {
+  background-color: white;
+  height: 35vh;
+  width: 100%;
+}
+
+.two p {
+  margin: 2em;
+  padding-top: 2em;
+}
+
+/*################RESPONSIVE##############*/
+@media only screen and (max-width: 600px) {
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+    overflow: hidden;
+    background: purple;
+  }
+  /* The navigation bar */
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    height: auto;
+    width: 100vw;
+    /* Full width */
+    display: block;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+  .home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .home a {
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+  }
+  .social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-top: 1vh;
+  }
+  .social-links a {
+    text-decoration: none;
+    color: white;
+  }
+  /* Links inside the navbar */
+  /*.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+/* All the snapping stuff */
+  .scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
+  }
+  section {
+    height: 100vh;
+    scroll-snap-align: center;
+  }
+  /* Other styles */
+  section {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section:nth-child(1) {
+    background-color: white;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: block;
+  }
+  .hero-content {
+    margin: 15em 3em;
+  }
+  .hero-content h1 {
+    font-size: 10vh;
+    margin: 0;
+  }
+  section:nth-child(2) {
+    background-color: turquoise;
+  }
+  section:nth-child(3) {
+    background-color: tomato;
+  }
+  section:nth-child(4) {
+    background-color: yellow;
+  }
+  section h2 {
+    padding-top: 15vh;
+    padding-left: 1.5em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
