@@ -1,0 +1,320 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+    overflow: hidden;
+    background: purple;
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #248bcc;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    height: auto;
+    width: 100%; /* Full width */
+    display: flex;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    justify-content: space-between;
+}
+
+.home {
+    display: block;
+    flex-direction: left;
+
+    a {
+        font-size: 1em;
+        text-decoration: none;
+        color: white;
+        margin: 1em;
+    }
+}
+
+.social-links {
+    display: block;
+    flex-direction: right;
+
+    a {
+        text-decoration: none;
+        color: white;
+        margin: 1em;
+    }
+}
+
+/* Links inside the navbar */
+/*.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+/* All the snapping stuff */
+.scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+/* Other styles */
+section {
+    padding: 1rem;
+    display: flex;
+}
+
+section:nth-child(1) {
+    background-color: White;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+.hero-content {
+    margin: 15em 3em;
+    text-align: center;
+
+    h1 {
+        font-size: 10vh;
+        margin: 0;
+    }
+    h2{
+        color: #595a5c;
+    }
+    .satvik{
+        color: #248bcc;
+    }
+}
+
+section:nth-child(2) {
+    background-color: white;
+    display: block;
+    padding-top: 5vh;
+    color: black;
+    h1{
+        font-size: 10vh;
+    }
+    h3{
+        font-size: 2rem;
+    }
+}
+
+section:nth-child(3) {
+    background-color: white;
+    display: block;
+    padding-top: 5vh;
+
+    h1{
+        font-size: 10vh;
+    }
+}
+
+section:nth-child(4) {
+    background-color: white;
+    display: block;
+    padding-top: 5vh;
+
+    h1{
+        font-size: 10vh;
+    }
+    h2{
+        font-size: 4vh;
+    }
+    h3{
+        margin-left: 4vw;
+    }
+    p{
+        margin-left: 4vw;
+    }
+}
+
+section:nth-child(5) {
+    background-color: white;
+    display: block;
+    padding-top: 5vh;
+
+    h1{
+        font-size: 10vh;
+    }
+}
+
+section:nth-child(6) {
+    background-color: white;
+    display: block;
+    padding-top: 5vh;
+
+    h1{
+        font-size: 8vh;
+    }
+    a{
+        text-decoration: none;
+        font-size: 4vh;
+        color:black;
+    }
+}
+
+section:nth-child(7) {
+    background-color: white;
+    display: block;
+    padding-top: 5vh;
+
+    h1{
+        font-size: 10vh;
+    }
+}
+
+
+.wapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 2em;
+    margin-left: 5vw;
+    background-color: green;
+}
+
+.space{
+    margin-top: 10vh;
+    margin-left: 10vw;
+}
+
+.one{
+    background-color: white;
+    height: 35vh;
+    width: 100%;
+    color: black;
+}
+
+.two{
+    background-color: white;
+    height: 35vh;
+    width: 100%;
+}
+
+/*################RESPONSIVE##############*/
+
+@media only screen and (max-width: 600px){
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+    overflow: hidden;
+    background: purple;
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    height: auto;
+    width: 100vw; /* Full width */
+    display: block;
+    justify-content: space-between;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.home {
+    display: flex;
+    justify-content: space-around;
+
+    a {
+        font-size: 1em;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1vh;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+/* Links inside the navbar */
+/*.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+/* All the snapping stuff */
+.scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+/* Other styles */
+section {
+    padding: 1rem;
+    display: flex;
+}
+
+section:nth-child(1) {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+.hero-content {
+    margin: 15em 3em;
+
+    h1 {
+        font-size: 10vh;
+        margin: 0;
+    }
+}
+
+section:nth-child(2) {
+    background-color: turquoise;
+}
+
+section:nth-child(3) {
+    background-color: tomato;
+}
+
+section:nth-child(4) {
+    background-color: yellow;
+}
+
+section h2 {
+    padding-top: 15vh;
+    padding-left: 1.5em;
+}
+
+
+}

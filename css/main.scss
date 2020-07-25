@@ -85,10 +85,15 @@ section:nth-child(1) {
 
 .hero-content {
     margin: 15em 3em;
+    text-align: center;
 
     h1 {
         font-size: 10vh;
         margin: 0;
+    }
+
+    .satvik{
+        color: grey;
     }
 }
 
